@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Executivo - Paulo Elias Tavares Generozo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-accent: #2563eb;
+            --text-main: #334155;
+            --text-headings: #0f172a;
+            --border-color: #e2e8f0;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --badge-bg: #eff6ff;
+            --badge-border: #bfdbfe;
+            --badge-text: #1d4ed8;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            line-height: 1.6;
+            font-size: 15px;
+            padding: 40px 20px;
+        }
+        
+        .cv-container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 60px 80px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+        
+        .action-bar {
+            max-width: 960px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary {
+            background: var(--primary-accent);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        
+        .btn-outline {
+            background: white;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+        .btn-outline:hover {
+            background: #f1f5f9;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.03em;
+            margin-bottom: 6px;
+        }
+        
+        p strong:first-child {
+            font-size: 17px;
+            color: var(--primary-accent);
+            display: block;
+            margin-bottom: 6px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 24px;
+            margin-bottom: 6px;
+        }
+        
+        a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.55;
+        }
+        
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #0f172a;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 28px 0;
+        }
+        
+        /* Otimização Estrita para Impressão / PDF */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                font-size: 12px;
+                color: #000;
+            }
+            .action-bar {
+                display: none;
+            }
+            .cv-container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            h1 { font-size: 24px; }
+            h2 { font-size: 15px; margin-top: 20px; margin-bottom: 10px; border-bottom: 1.5px solid #333; }
+            h3 { font-size: 13px; margin-top: 14px; margin-bottom: 4px; }
+            li { margin-bottom: 4px; }
+            a { color: #000; text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="action-bar">
+        <a href="CURRICULO_PAULO_GENEROZO_ATS_GLOBAL_EN.md" class="btn btn-outline" target="_blank">🌐 English Version</a>
+        <button class="btn btn-primary" onclick="window.print()">🖨️ Imprimir / Salvar em PDF</button>
+    </div>
+    <div class="cv-container">
+        <h1>Paulo Elias Tavares Generozo</h1>
+<p><strong>Cientista de Dados | Engenheiro de Machine Learning &amp; Arquiteto de IA em Saúde (HealthTech &amp; MLOps)</strong><br />
+São Paulo, SP – Brasil | <a href="mailto:pauloelias41@gmail.com">pauloelias41@gmail.com</a> | +55 (14) 99841-8631<br />
+<a href="https://linkedin.com/in/paulo-generozo">LinkedIn: linkedin.com/in/paulo-generozo</a> | <a href="https://github.com/generozo-paulo">GitHub: github.com/generozo-paulo</a> | <a href="https://github.com/paulo-generozo">GitHub P&amp;D: github.com/paulo-generozo</a><br />
+<em>Disponível para posições remotas (Brasil e Internacional) ou presenciais/híbridas em São Paulo.</em></p>
+<hr />
+<h2>Resumo Profissional</h2>
+<p>Engenheiro de Machine Learning e Cientista de Dados Sênior com sólida bagagem em <strong>Sistemas de Alta Complexidade</strong>, <strong>Arquitetura de Dados Distribuída</strong> e <strong>HealthTech</strong>. Une mais de uma década de rigor técnico prático em instrumentação e equipamentos hospitalares críticos (tomografia computadorizada e telemetria) com o desenvolvimento de ponta a ponta de soluções modernas de Inteligência Artificial: desde algoritmos matemáticos <em>from scratch</em> (como o seletor vetorial proprietário <strong>CFIS</strong> em NumPy) até arquiteturas de microsserviços em produção (<strong>Docker Compose, FastAPI, Nginx Alpine, MongoDB NoSQL e PostgreSQL</strong>).</p>
+<p>Especialista na implementação do padrão internacional de interoperabilidade clínica <strong>openEHR</strong> e <strong>HL7 FHIR R4</strong>, com estrita observância à <strong>LGPD e HIPAA (<em>Privacy by Design</em>)</strong>. Ampla vivência em <strong>Visão Computacional e Deep Learning Explicável (XAI)</strong> utilizando <strong>ResNet50V2 com Grad-CAM</strong> e segmentação tomográfica volumétrica (<strong>U-Net DICOM</strong>). Domínio prático comprovado em pipelines modernos de <strong>Big Data (PySpark, Delta Lake Medallion)</strong>, <strong>MLOps Industrial (MLflow Model Registry, Evidently AI para Data Drift e CI/CD via GitHub Actions)</strong>, <strong>IA Generativa (RAG Clínico com ChromaDB e LLMs Multimodais)</strong> e <strong>Inferência Causal com Propensity Score Matching</strong>.</p>
+<hr />
+<h2>Habilidades Técnicas &amp; Tecnologias</h2>
+<ul>
+<li><strong>Linguagens de Programação:</strong> Python 3.10+, SQL (PostgreSQL, MySQL, SQL Server, SQLite), PySpark, Shell Script / Bash, HTML5/CSS3/JavaScript.</li>
+<li><strong>Inteligência Artificial &amp; Deep Learning:</strong> PyTorch (Redes Neurais com <code>nn.Module</code>, tensores GPU/CUDA, <code>DataLoader</code>), TensorFlow / Keras (ResNet50V2, Transfer Learning, EarlyStopping, Dropout), Visão Computacional Médica (U-Net, OpenCV, Pillow, DICOM <code>pydicom</code>), IA Explicável / XAI (Grad-CAM com <code>tf.GradientTape</code>, SHAP Values).</li>
+<li><strong>Machine Learning Clássico &amp; Estatística:</strong> Scikit-Learn, XGBoost, Random Forest (otimização para Recall de 99,60%), Support Vector Machines (SVM), Regressão Ridge/Lasso, Modelos Lineares Generalizados (GLM), Algoritmo Proprietário CFIS (<em>Class-Feature Interaction Selection</em>).</li>
+<li><strong>Big Data, Data Lakehouse &amp; Cloud:</strong> PySpark 3.5, Apache Spark, Delta Lake (Arquitetura Medallion: Bronze, Silver e Gold), Azure Databricks, Feature Stores Distribuídas, Formato Parquet Particionado, Conexão e Queries em Nuvem (AWS, Azure, GCP).</li>
+<li><strong>MLOps, Governança &amp; Engenharia de Produção:</strong> MLflow (Experiment Tracking &amp; Model Registry Staging/Production), Evidently AI (Monitoramento de Data Drift e Concept Drift via testes Kolmogorov-Smirnov e PSI), Docker &amp; Docker Compose, Imagens Multi-stage leves (Nginx Alpine), CI/CD automatizado via GitHub Actions, Testes Automatizados com PyTest, Pre-commit Hooks.</li>
+<li><strong>GenAI, LLMs &amp; Processamento de Linguagem Natural (NLP):</strong> Arquiteturas RAG (Retrieval-Augmented Generation), ChromaDB, Embeddings Vetoriais, LangChain, LlamaIndex, LLMs Multimodais (Fusão Visão + Texto), NLP Clínico (NER de Sintomas e Dosagens, Sumarização SOAP), TF-IDF, NLTK, SpaCy.</li>
+<li><strong>Estatística Avançada, Testes A/B &amp; Causalidade:</strong> Inferência Causal (DoWhy, Propensity Score Matching - PSM, Grafos Acíclicos DAGs, Testes de Refutação Placebo), Testes A/B Clínicos e de Produto, Controle de Falsa Descoberta (FDR Benjamini-Hochberg, Bonferroni), Multi-Armed Bandits (Thompson Sampling Bayesiano, UCB1, Epsilon-Greedy), Análise de Sobrevivência (Weibull RUL).</li>
+<li><strong>Informática em Saúde &amp; Privacidade (HealthTech):</strong> Padrão <strong>openEHR</strong> (Arquétipos de <code>Observation</code>, <code>Evaluation</code>, <code>Composition</code> e Templates), <strong>HL7 FHIR R4</strong>, Sistemas de Apoio à Decisão Clínica (SADC), <strong>LGPD / HIPAA</strong>, <em>Privacy by Design</em>, Pseudonimização via UUID cego, Master Patient Index (MPI).</li>
+<li><strong>Bancos de Dados &amp; Storage:</strong> PostgreSQL 16 (Índice Demográfico / Transacional), MongoDB 7.0 (Repositório Clínico NoSQL de Arquétipos), Redis, SQLite, Delta Lake ACID.</li>
+<li><strong>Metodologias &amp; Práticas Ágeis:</strong> Metodologia CRISP-DM, Spec-Driven Development, Clean Architecture, Git/GitHub, Documentação Técnica Multilíngue (Português, Inglês e Alemão).</li>
+</ul>
+<hr />
+<h2>Experiência Profissional</h2>
+<h3><strong>Engenheiro de Machine Learning &amp; Cientista de Dados</strong> | <em>Consultoria e Projetos de Tecnologia &amp; Saúde</em></h3>
+<p><em>Janeiro de 2024 – Presente | São Paulo, Brasil (Híbrido / Remoto)</em>
+* Arquitetou e orquestrou ecossistema de dados e inteligência preditiva composto por 25 projetos modulares em produção e P&amp;D, abrangendo desde pipelines de Lakehouse distribuído até sistemas de apoio clínico em tempo real.
+* Projetou e publicou o sistema preditivo <strong>SADC-CKD</strong> estruturado sob o padrão internacional <strong>openEHR</strong> em arquitetura de microsserviços (Docker Compose, FastAPI, React 18 e Nginx Alpine), alcançando <strong>Recall de 99,60%</strong> e garantindo conformidade estrita com a LGPD via segregação física de bancos demográfico (PostgreSQL) e clínico (MongoDB NoSQL).
+* Desenvolveu do zero a fórmula e o código matricial do algoritmo <strong>CFIS</strong> (<em>Class-Feature Interaction Selection</em>) em NumPy, viabilizando redução de dimensionalidade vetorial em bases médicas de alta complexidade sem perda de poder preditivo frente a métodos consolidados (ANOVA e Random Forest).
+* Implementou pipelines de MLOps automatizados com <strong>MLflow Model Registry</strong> e esteiras de <strong>CI/CD no GitHub Actions</strong>, reduzindo o ciclo de validação e deploy de modelos de dias para minutos com garantia de testes de regressão estatística no <strong>PyTest</strong>.
+* Estruturou monitores contínuos de integridade de dados e conceito com <strong>Evidently AI</strong> (testes Kolmogorov-Smirnov e índice PSI), prevenindo degradação preditiva em ambientes de telemetria e prontuários.
+* Desenvolveu motor analítico de previsão de churn e absenteísmo hospitalar com <strong>XGBoost e valores SHAP</strong>, gerando estratégias de reengajamento proativo capazes de recuperar até 24% da receita ociosa de consultas.</p>
+<h3><strong>Especialista em Manutenção &amp; Engenharia de Equipamentos Biomédicos</strong> | <em>Engenharia Clínica e Diagnóstico Hospitalar</em></h3>
+<p><em>Janeiro de 2013 – Dezembro de 2023 | São Paulo, Brasil</em>
+* Liderou manutenções preventivas, corretivas e calibrações de missão crítica em parques de diagnóstico por imagem de alta complexidade, com foco em <strong>Tomógrafos Computadorizados (CT)</strong>, sistemas de Raio-X, monitores multiparamétricos e equipamentos de suporte à vida.
+* Investigou e solucionou falhas eletroeletrônicas, de aquisição de sinal e de software em tempo real em ambientes de emergência e centros cirúrgicos, garantindo 100% de disponibilidade operacional e estrita conformidade com normas sanitárias (ANVISA) e de segurança radiológica.
+* Conduziu a interface direta com equipes de médicos radiologistas, intensivistas e físicos médicos, adquirindo o entendimento prático do fluxo de trabalho assistencial e dos desafios reais de qualidade de dados brutos (sinais e imagens DICOM) que hoje fundamentam sua abordagem em IA biomédica.</p>
+<hr />
+<h2>Projetos Estratégicos de Portfólio (Engenharia de Produção &amp; P&amp;D)</h2>
+<h3>🩺 <strong>SADC-CKD: Sistema de Apoio à Decisão Clínica com openEHR &amp; Microsserviços</strong></h3>
+<p><em>Stack: Docker Compose, FastAPI, React 18, Vite, Nginx, MongoDB 7.0, PostgreSQL 16, Scikit-Learn</em> | <a href="https://github.com/generozo-paulo/CKD_OPENEHR">GitHub</a>
+* Projetou arquitetura de microsserviços distribuída em 4 contêineres Docker, segregando fisicamente dados PII no PostgreSQL e dados clínicos no MongoDB vinculados exclusivamente por UUID cego (<code>ehr_id</code>), inviabilizando vazamento não autorizado sob a LGPD.
+* Desacoplou a lógica de software do conhecimento médico padronizando dados em arquétipos <strong>openEHR</strong> (<code>Observation</code>, <code>Evaluation</code> e <code>Composition</code>).
+* Treinou estimador Random Forest otimizado para <strong>Recall de 99,60%</strong>, priorizando a sensibilidade clínica para erradicar falsos-negativos em triagens primárias.</p>
+<h3>🔄 <strong>openEHR &amp; HL7 FHIR R4 Bidirectional Converter</strong></h3>
+<p><em>Stack: Python 3.10+, Pydantic V2, openEHR RM, HL7 FHIR R4, PyTest</em> | <a href="https://github.com/generozo-paulo/openehr-fhir-clinical-converter">GitHub</a>
+* Desenvolveu conversor semântico de nível 4 entre os dois maiores padrões globais de saúde digital, viabilizando interoperabilidade sem perdas entre prontuários eletrônicos legados e ecossistemas FHIR.
+* Implementou validação estrita com Pydantic V2 e testes de mutação estatística, alcançando tempos de conversão sub-milissegundo (&lt;5ms por transação).</p>
+<h3>🩻 <strong>Diagnóstico de Nefrolitíase via Deep Learning Explicável (Grad-CAM)</strong></h3>
+<p><em>Stack: TensorFlow / Keras, ResNet50V2, Grad-CAM, Gradio, OpenCV, Pillow, CRISP-DM</em> | <a href="https://github.com/generozo-paulo/CKD-DL-CRISPDM">GitHub</a>
+* Conduziu ciclo CRISP-DM para detecção de cálculos renais em exames tomográficos axiais utilizando Transfer Learning com <strong>ResNet50V2</strong>.
+* Eliminou o efeito de 'caixa-preta' médica calculando gradientes na última camada convolucional via <code>tf.GradientTape</code>, gerando mapas de calor térmicos sobre o exame original em aplicação interativa Gradio para validação imediata por médicos radiologistas.</p>
+<h3>🩻 <strong>Segmentação Semântica Volumétrica em DICOM com PyTorch (U-Net)</strong></h3>
+<p><em>Stack: PyTorch, U-Net, pydicom, Dice Loss, NumPy 3D, Albumentations</em> | <a href="https://github.com/generozo-paulo/dicom-segmentation-unet-kidney">GitHub</a>
+* Construiu pipeline de segmentação semântica de parênquima renal e nódulos a partir de arquivos tomográficos brutos (DICOM), aplicando calibração de Unidades Hounsfield (HU) e função de perda mista BCE-Dice, atingindo <strong>Coeficiente de Similaridade de Dice de 0.89</strong>.</p>
+<h3>🌊 <strong>PySpark Healthcare Lakehouse (Arquitetura Medallion)</strong></h3>
+<p><em>Stack: PySpark 3.5, Delta Lake 3.1, Docker, ACID Transactions, Parquet Particionado</em> | <a href="https://github.com/generozo-paulo/pyspark-healthcare-lakehouse">GitHub</a>
+* Desenvolveu pipeline de processamento distribuído em arquitetura Medallion: ingestão imutável (Bronze), limpeza, validação de schema e mascaramento de PII (Silver), e consolidação em tabelas agregadas de alta performance para BI e ML (Gold).</p>
+<h3>⚡ <strong>MIMIC-IV Critical Care Distributed Feature Store</strong></h3>
+<p><em>Stack: PySpark, Delta Lake, Window Functions, Time-Travel, MLOps</em> | <a href="https://github.com/generozo-paulo/spark-feature-store-mimic">GitHub</a>
+* Construiu Feature Store distribuída sobre o dataset hospitalar de terapia intensiva MIMIC-IV, implementando agregação de sinais temporais em janelas móveis (6h, 12h, 24h) com versionamento time-travel para eliminação completa de vazamento de dados (<em>data leakage</em>).</p>
+<h3>🧬 <strong>MLflow Model Registry &amp; Pipeline de Governança Contínua</strong></h3>
+<p><em>Stack: MLflow, Scikit-Learn, Docker, Model Governance</em> | <a href="https://github.com/generozo-paulo/mlflow-model-registry-pipeline">GitHub</a>
+* Orquestrou pipeline de governança com rastreamento centralizado de parâmetros, métricas e artefatos, implementando gates automatizados de validação para promoção de modelos de Staging para Production.</p>
+<h3>🛡️ <strong>Monitor de Data Drift e Concept Drift com Evidently AI</strong></h3>
+<p><em>Stack: Evidently AI, Kolmogorov-Smirnov, Population Stability Index (PSI), Scikit-Learn</em> | <a href="https://github.com/generozo-paulo/data-drift-detector-evidently">GitHub</a>
+* Estruturou monitor contínuo de integridade estatística em inferências preditivas com testes não-paramétricos de dois lados (Kolmogorov-Smirnov) e alarmes automáticos em tempo hábil para retreinamento.</p>
+<h3>🩺 <strong>Clinical RAG: Assistente Baseado em Evidências Médicas</strong></h3>
+<p><em>Stack: Python, ChromaDB, LangChain, OpenAI / Hugging Face, FastAPI</em> | <a href="https://github.com/generozo-paulo/clinical-rag-medical-guidelines">GitHub</a>
+* Desenvolveu sistema RAG para suporte a decisões terapêuticas com busca vetorial por similaridade de cosseno em diretrizes clínicas validadas, exigindo citação obrigatória de fontes bibliográficas para conter 100% de alucinações.</p>
+<h3>🔬 <strong>Algoritmo Proprietário de Feature Selection (CFIS) &amp; Dashboard Científico</strong></h3>
+<p><em>Stack: Python, NumPy Broadcasting, Streamlit, Scikit-Learn, SciPy, Jinja2, PDFKit</em> | <a href="https://github.com/paulo-generozo/streamlit-cfis-ckd-dashboard">GitHub</a>
+* Criou do zero a classe em Python <code>CFIS_Selector</code> (<em>Class-Feature Interaction Selection</em>) baseada em álgebra linear vetorial em NumPy para ranqueamento de biomarcadores, integrando dashboard Streamlit e exportador de laudos em PDF.</p>
+<h3>⚖️ <strong>Inferência Causal em Dados Clínicos com DoWhy &amp; Propensity Score Matching</strong></h3>
+<p><em>Stack: DoWhy, CausalInference, NetworkX, Scikit-Learn</em> | <a href="https://github.com/generozo-paulo/causal-inference-healthcare-outcomes">GitHub</a>
+* Estimou o efeito causal real de intervenções clínicas a partir de dados observacionais ruidosos, desenhando grafos causais (DAGs) e validando robustez estatística com testes de refutação placebo.</p>
+<hr />
+<h2>Formação Acadêmica</h2>
+<p><strong>Graduação Tecnológica em Ciência de Dados</strong><br />
+FATEC Ourinhos – Faculdade de Tecnologia do Estado de São Paulo<br />
+<em>Foco em Aprendizado de Máquina, Inteligência Artificial, Engenharia de Dados, Modelagem Estatística e Governança da Informação.</em></p>
+<hr />
+<h2>Idiomas &amp; Comunicação Internacional</h2>
+<ul>
+<li><strong>Português:</strong> Nativo.</li>
+<li><strong>Inglês:</strong> Fluente para leitura técnica, escrita arquitetural e documentação de código; intermediário/avançado para comunicação de negócios.</li>
+<li><strong>Alemão:</strong> Comunicação técnica básica/intermediária (autor de documentação analítica oncológica em língua alemã no GitHub: <code>thyroid_eda_portfolio_deutsch_val.ipynb</code>).</li>
+</ul>
+    </div>
+</body>
+</html>
