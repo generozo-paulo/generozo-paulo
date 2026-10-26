@@ -33,6 +33,7 @@ Deep expertise in international healthcare interoperability standards (**openEHR
 
 ### **Senior Machine Learning Engineer & Data Scientist** | *Technology & Healthcare Consulting*  
 *January 2024 – Present | Sao Paulo, Brazil (Remote / Hybrid)*
+
 * Designed, built, and open-sourced a high-impact production portfolio of 25 enterprise-grade AI and data engineering repositories, covering distributed lakehouse pipelines to real-time clinical AI systems.
 * Architected the production-ready **SADC-CKD** clinical decision support platform compliant with the international **openEHR** standard across 4 containerized microservices (Docker Compose, FastAPI, React 18, Nginx Alpine), achieving **99.60% Recall** with physical PII database segregation (PostgreSQL vs MongoDB NoSQL) ensuring strict HIPAA/LGPD compliance.
 * Invented and implemented from scratch the **CFIS** (*Class-Feature Interaction Selection*) mathematical algorithm in NumPy vector broadcasting, achieving robust dimensionality reduction on complex clinical datasets with zero reliance on closed black-box libraries.
@@ -42,6 +43,7 @@ Deep expertise in international healthcare interoperability standards (**openEHR
 
 ### **Biomedical Instrumentation & Critical Equipment Specialist** | *Clinical Engineering & Diagnostic Imaging*  
 *January 2013 – December 2023 | Sao Paulo, Brazil*
+
 * Managed calibration, preventive, and emergency corrective engineering on life-critical hospital imaging systems, specializing in **Computed Tomography (CT) Scanners**, X-ray generators, multiparameter patient monitors, and ICU life-support units.
 * Diagnosed complex electronic, hardware sensor, and data acquisition failures under emergency room pressure, maintaining 100% regulatory compliance with health inspection and medical radiation protocols.
 * Collaborated daily with radiologists, intensive care physicians, and medical physicists, mastering the real-world clinical workflow, sensor noise characteristics, and raw medical imaging formats (DICOM) that now drive his rigorous approach to healthcare AI.
@@ -51,50 +53,61 @@ Deep expertise in international healthcare interoperability standards (**openEHR
 ## Highlighted Production & Research Projects
 
 ### 🩺 **SADC-CKD: Clinical Decision Support System with openEHR & Microservices**
-*Stack: Docker Compose, FastAPI, React 18, Vite, Nginx, MongoDB 7.0, PostgreSQL 16, Scikit-Learn* | [GitHub](https://github.com/generozo-paulo/CKD_OPENEHR)
+**Stack:** `Docker Compose`, `FastAPI`, `React 18 / Vite`, `Nginx`, `MongoDB 7.0`, `PostgreSQL 16`, `Scikit-Learn` | [GitHub Repository](https://github.com/generozo-paulo/CKD_OPENEHR)
+
 * Architected 4-container microservice platform isolating sensitive PII in PostgreSQL from clinical compositions in MongoDB via blind UUIDs, preventing unauthorized patient re-identification under HIPAA/LGPD.
 * Decoupled software business logic from healthcare domain models using **openEHR** archetypes (`Observation`, `Evaluation`, `Composition`).
 * Trained Random Forest classifier with **99.60% Clinical Recall**, eliminating false-negative risks in primary care triage.
 
 ### 🔄 **openEHR & HL7 FHIR R4 Bidirectional Interoperability Converter**
-*Stack: Python 3.10+, Pydantic V2, openEHR RM, HL7 FHIR R4, PyTest* | [GitHub](https://github.com/generozo-paulo/openehr-fhir-clinical-converter)
+**Stack:** `Python 3.10+`, `Pydantic V2`, `openEHR RM`, `HL7 FHIR R4`, `PyTest` | [GitHub Repository](https://github.com/generozo-paulo/openehr-fhir-clinical-converter)
+
 * Built bidirectional Level 4 semantic mapping engine bridging openEHR compositions and HL7 FHIR R4 clinical resources with sub-millisecond latency (<5ms) and 100% schema validation in Pydantic V2.
 
 ### 🩻 **Kidney Stone Detection via Deep Learning & Explainable AI (Grad-CAM)**
-*Stack: TensorFlow / Keras, ResNet50V2, Grad-CAM, Gradio, OpenCV, Pillow, CRISP-DM* | [GitHub](https://github.com/generozo-paulo/CKD-DL-CRISPDM)
+**Stack:** `TensorFlow / Keras`, `ResNet50V2`, `Grad-CAM`, `Gradio`, `OpenCV`, `Pillow`, `CRISP-DM` | [GitHub Repository](https://github.com/generozo-paulo/CKD-DL-CRISPDM)
+
 * Conducted complete CRISP-DM lifecycle for automated renal calculi detection in axial CT slices using Transfer Learning on **ResNet50V2**.
 * Eliminated medical black-box barriers by extracting gradient class activation maps (Grad-CAM via `tf.GradientTape`), overlaying heatmaps on original scans within a Gradio UI for real-time radiologist validation.
 
 ### 🩻 **Volumetric DICOM Semantic Segmentation with PyTorch (U-Net)**
-*Stack: PyTorch, U-Net, pydicom, Dice Loss, 3D NumPy, Albumentations* | [GitHub](https://github.com/generozo-paulo/dicom-segmentation-unet-kidney)
+**Stack:** `PyTorch`, `U-Net`, `pydicom`, `Dice Loss`, `3D NumPy`, `Albumentations` | [GitHub Repository](https://github.com/generozo-paulo/dicom-segmentation-unet-kidney)
+
 * Built end-to-end volumetric segmentation pipeline on raw CT DICOM files with Hounsfield Unit (HU) normalization and combined BCE-Dice loss, reaching **0.89 Dice Similarity Coefficient**.
 
 ### 🌊 **PySpark Healthcare Lakehouse (Medallion Architecture)**
-*Stack: PySpark 3.5, Delta Lake 3.1, Docker, ACID Transactions, Partitioned Parquet* | [GitHub](https://github.com/generozo-paulo/pyspark-healthcare-lakehouse)
+**Stack:** `PySpark 3.5`, `Delta Lake 3.1`, `Docker`, `ACID Transactions`, `Partitioned Parquet` | [GitHub Repository](https://github.com/generozo-paulo/pyspark-healthcare-lakehouse)
+
 * Built distributed ETL lakehouse under Medallion architecture: immutable ingestion (Bronze), automated PII masking and schema enforcement (Silver), and high-performance aggregated analytical tables for BI and ML (Gold).
 
 ### ⚡ **MIMIC-IV Critical Care Distributed Feature Store**
-*Stack: PySpark, Delta Lake, Window Functions, Time-Travel, MLOps* | [GitHub](https://github.com/generozo-paulo/spark-feature-store-mimic)
+**Stack:** `PySpark`, `Delta Lake`, `Window Functions`, `Time-Travel`, `MLOps` | [GitHub Repository](https://github.com/generozo-paulo/spark-feature-store-mimic)
+
 * Engineered scalable ICU feature store using PySpark Window Functions for rolling aggregations (6h, 12h, 24h) with Delta Lake time-travel versioning, completely eliminating pre-inference data leakage.
 
 ### 🧬 **Enterprise MLflow Model Registry & Continuous Governance Pipeline**
-*Stack: MLflow, Scikit-Learn, Docker, Model Governance* | [GitHub](https://github.com/generozo-paulo/mlflow-model-registry-pipeline)
+**Stack:** `MLflow`, `Scikit-Learn`, `Docker`, `Model Governance` | [GitHub Repository](https://github.com/generozo-paulo/mlflow-model-registry-pipeline)
+
 * Automated model governance tracking parameters, metrics, and serialized artifacts with programmatic promotion gates from Staging to Production.
 
 ### 🛡️ **Data Drift & Concept Drift Monitoring with Evidently AI**
-*Stack: Evidently AI, Kolmogorov-Smirnov, Population Stability Index (PSI), Scikit-Learn* | [GitHub](https://github.com/generozo-paulo/data-drift-detector-evidently)
+**Stack:** `Evidently AI`, `Kolmogorov-Smirnov`, `Population Stability Index (PSI)`, `Scikit-Learn` | [GitHub Repository](https://github.com/generozo-paulo/data-drift-detector-evidently)
+
 * Established automated statistical monitoring using two-sided Kolmogorov-Smirnov tests and PSI metrics, triggering retraining alerts before operational model degradation.
 
 ### 🩺 **Clinical RAG: Evidence-Based Clinical Guideline Assistant**
-*Stack: Python, ChromaDB, LangChain, OpenAI / Hugging Face, FastAPI* | [GitHub](https://github.com/generozo-paulo/clinical-rag-medical-guidelines)
+**Stack:** `Python`, `ChromaDB`, `LangChain`, `OpenAI / Hugging Face`, `FastAPI` | [GitHub Repository](https://github.com/generozo-paulo/clinical-rag-medical-guidelines)
+
 * Developed Retrieval-Augmented Generation (RAG) assistant querying accredited clinical guidelines with cosine similarity vector retrieval and mandatory bibliographic citations, achieving zero hallucinations.
 
 ### 🔬 **Proprietary Feature Selection Algorithm (CFIS) & Scientific Dashboard**
-*Stack: Python, NumPy Broadcasting, Streamlit, Scikit-Learn, SciPy, Jinja2, PDFKit* | [GitHub](https://github.com/paulo-generozo/streamlit-cfis-ckd-dashboard)
+**Stack:** `Python`, `NumPy Broadcasting`, `Streamlit`, `Scikit-Learn`, `SciPy`, `Jinja2`, `PDFKit` | [GitHub Repository](https://github.com/paulo-generozo/streamlit-cfis-ckd-dashboard)
+
 * Invented from scratch the `CFIS_Selector` (*Class-Feature Interaction Selection*) vector algorithm in NumPy for biomarker ranking, featuring an interactive Streamlit UI and automated clinical PDF report generator.
 
 ### ⚖️ **Causal Inference on Clinical Outcomes with DoWhy & PSM**
-*Stack: DoWhy, CausalInference, NetworkX, Scikit-Learn* | [GitHub](https://github.com/generozo-paulo/causal-inference-healthcare-outcomes)
+**Stack:** `DoWhy`, `CausalInference`, `NetworkX`, `Scikit-Learn` | [GitHub Repository](https://github.com/generozo-paulo/causal-inference-healthcare-outcomes)
+
 * Estimated Average Treatment Effect (ATE) on observational clinical data using Propensity Score Matching and causal DAGs, validating structural robustness via placebo refutation tests.
 
 ---
