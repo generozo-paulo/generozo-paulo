@@ -1,6 +1,6 @@
 # Paulo Elias Tavares Generozo
 **Cientista de Dados | Engenheiro de Machine Learning & Arquiteto de IA em Saúde (HealthTech & MLOps)**  
-São Paulo, SP – Brasil | [pauloelias41@gmail.com](mailto:pauloelias41@gmail.com) | +55 (14) 99841-8631  
+São Paulo, SP – Brasil | [pauloelias41@gmail.com](mailto:pauloelias41@gmail.com) | +55 (14) 99629-9626  
 [LinkedIn: linkedin.com/in/paulo-generozo](https://linkedin.com/in/paulo-generozo) | [GitHub: github.com/generozo-paulo](https://github.com/generozo-paulo) | [GitHub P&D: github.com/paulo-generozo](https://github.com/paulo-generozo)  
 *Disponível para posições remotas (Brasil e Internacional) ou presenciais/híbridas em São Paulo.*
 
